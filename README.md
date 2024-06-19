@@ -35,6 +35,7 @@ This repository contains a Python script that implements a data processing and m
 python3 Prod_Heart_Stroke_Prediction.py > errors.log &
 
 ## Airflow Dag script for Apache Airflow execution
+```python
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime, timedelta
@@ -64,7 +65,11 @@ t1 = BashOperator(
 
 t1
 
-
+```
+Launch airflow after placing dag in the dags folder and init the db
+   ```bash
+airflow webserver -p 8080
+airflow scheduler
 
 
 
