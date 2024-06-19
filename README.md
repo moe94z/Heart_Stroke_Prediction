@@ -70,8 +70,3 @@ Launch airflow after placing dag in the dags folder and init the db
    ```bash
 airflow webserver -p 8080
 airflow scheduler
-
-
-
-
-
